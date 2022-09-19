@@ -1,0 +1,165 @@
+.about-company,
+.team {
+  @include textStyle();
+  color: $textAbout;
+  padding: 10px 20px;
+  h2 {
+    @include titleStyle();
+    color: $black;
+    padding-left: 10px;
+  }
+  .border-left {
+    border-left: 9px solid $lightCard;
+  }
+  h3 {
+    @include titleH3Style();
+    color: $black;
+  }
+  .social-links-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin: 1px;
+      margin-bottom: 20px;
+    }
+    .link-1 {
+      background: $socialLink url("../img/facebook.png") no-repeat center;
+      &:hover {
+        background: $lightGray url("../img/facebook.png") no-repeat center;
+      }
+    }
+    .link-2 {
+      background: $socialLink url("../img/tweter.png") no-repeat center;
+      &:hover {
+        background: $lightGray url("../img/tweter.png") no-repeat center;
+      }
+    }
+    .link-3 {
+      background: $socialLink url("../img/google.png") no-repeat center;
+      &:hover {
+        background: $lightGray url("../img/google.png") no-repeat center;
+      }
+    }
+    .link-4 {
+      background: $socialLink url("../img/ball.png") no-repeat center;
+      &:hover {
+        background: $lightGray url("../img/ball .png") no-repeat center;
+      }
+    }
+    .link-5 {
+      background: $socialLink url("../img/be.png") no-repeat center;
+      &:hover {
+        background: $lightGray url("../img/be.png") no-repeat center;
+      }
+    }
+  }
+}
+
+.about-company-value {
+  @include titleH3Style();
+  color: $black;
+}
+.accent-blok {
+  width: 50px;
+  height: 50px;
+  background-color: $accent;
+  color: $white;
+  @include flexCenter();
+  margin-right: 10px;
+  flex: 0 0 50px;
+}
+.accent-blok-flexbox {
+  display: flex;
+  justify-content: flex-start;
+}
+.team-card {
+  background-color: $lightCard;
+  margin: auto;
+}
+.work {
+  @include textStyle();
+  background-color: $DarkGray;
+  color: $white;
+  padding: 10px 20px;
+  h2 {
+    @include titleStyle();
+    color: $white;
+    padding-left: 10px;
+  }
+  .border-left {
+    border-left: 9px solid $lightCard;
+  }
+  img {
+    width: 100%;
+    margin: 5px;
+  }
+}
+
+/*only mobile */
+@media (max-width: 767px) {
+  .about-company {
+    font-size: 15px;
+    h2 {
+      font-size: 18px;
+      line-height: 1;
+    }
+    h3 {
+      font-size: 16px;
+      line-height: 1;
+    }
+    p {
+      margin: 5px 0;
+      display: block;
+      width: 100%;
+    }
+    .social-links-list {
+      flex-wrap: nowrap;
+      a {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .accent-blok {
+      width: 30px;
+      height: 30px;
+      flex: 0 0 30px;
+    }
+    .flex-start {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      p {
+        display: block;
+        // padding-bottom: 20px;
+      }
+    }
+  }
+}
+/* tablet */
+@media (min-width: 768px) {
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-company {
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+/* laptop */
+@media (min-width: 992px) {
+}
+
+/* lg (desktop) */
+@media (min-width: 1200px) {
+  .social-links-list {
+    margin-top: 50px;
+  }
+}

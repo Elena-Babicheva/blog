@@ -1,0 +1,141 @@
+.header {
+  background: $darkHeader;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: $lightHeader;
+}
+.logo {
+  img {
+    max-width: 100%;
+  }
+}
+.navigation {
+  overflow-x: auto;
+}
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navigation-list {
+  padding: 8px;
+  text-align: center;
+  height: 100%;
+  a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: inherit;
+    padding: 8px;
+
+    &:hover,
+    &:focus {
+      padding: 7px;
+      border: 1px solid $lightHeader;
+      border-radius: 5%;
+    }
+  }
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $lightHeader;
+  border-radius: 5%;
+  padding: 6px;
+  width: 195px;
+  input {
+    background-color: transparent;
+    color: $lightHeader;
+    border: none;
+    width: 155px;
+    padding-left: 2px;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: inherit;
+      color: $lightHeader;
+      width: 155px;
+      font-family: "Quattrocento Sans", sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}
+.search-btn {
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  border: none;
+  background: url("../img/magnifier.png") no-repeat center;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid $lightHeader;
+    border-radius: 8%;
+  }
+}
+
+/*only mobile */
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none;
+  }
+  .flex-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .logo {
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+  .navigation ul {
+    justify-content: flex-start;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  header {
+    background: $darkHeader;
+  }
+  .flex-center {
+    @include flexCenter();
+    flex-wrap: wrap;
+  }
+  .logo {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .search {
+    margin-bottom: 10px;
+  }
+}
+
+/* laptop */
+@media (min-width: 992px) {
+  .header {
+   padding: 1%;
+  }
+  .flex-center {
+    @include flexCenter();
+    flex-wrap: wrap;
+  }
+  .search {
+    margin-bottom: 0;
+  }
+}
+/* lg (desktop) */
+@media (min-width: 1200px) {
+  .header {
+    background-color: inherit;
+    padding: 0;
+    .container {
+      background: $darkHeader;
+    }
+  }
+   .flex-center {
+    @include flexCenter();
+    flex-wrap: wrap;
+  }
+}

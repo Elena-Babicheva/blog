@@ -1,0 +1,84 @@
+.hero {
+  background: url("../img/slyder.png") no-repeat center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: $textSlyder;
+  h1 {
+    @include titleStyle();
+    color: $white;
+  }
+  .slyder-text {
+    @include textStyle();
+  }
+}
+.whiteBtn {
+  @include whiteBtn();
+}
+.accentBtn {
+  @include accentBtn();
+  margin-right: 15px;
+}
+/*only mobile */
+@media (max-width: 767px) {
+  .hero {
+    padding: 2px;
+    justify-content: center;
+    background-size: cover;
+    h1 {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // padding: 15px;
+    }
+    .slyder-text {
+      margin-bottom: 7px;
+    }
+    .hero-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .accentBtn {
+      margin: 5px;
+    }
+    .whiteBtn {
+      margin: 5px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    padding: 100px;
+    justify-content: flex-start;
+    h1 {
+      padding-bottom: 15px;
+    }
+    .slyder-text {
+      padding-bottom: 15px;
+    }
+    .hero-btn {
+      @include flexCenter();
+    }
+    .accentBtn {
+      margin: 10px;
+    }
+    .whiteBtn {
+      margin: 10px;
+    }
+  }
+}
+/* lg (desktop) */
+@media (min-width: 1200px) {
+  section {
+    justify-content: flex-start;
+  }
+  .hero .hero-btn {
+    justify-content: flex-start;
+  }
+}

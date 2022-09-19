@@ -1,0 +1,75 @@
+$darkHeader: #1d2126;
+$lightHeader: #a4aead;
+$white: #fff;
+$black: #292f36;
+$accent: #23b7a4;
+$socialLink:#c8cdd0;
+$lightGray: #d0d5d9;
+
+$textSlyder:#ccd0d7;
+$textAbout:#8d8f92;
+$lightCard: #e1e6ea;
+
+$Gray: #929b9b;
+
+
+
+$DarkGray: #3a454d;
+$hoverDarkGray: #4e5a62;
+
+
+// для ценртации
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexStart() {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+// для заголовков h2
+@mixin titleStyle() {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans", sans-serif;
+  }
+// для заголовков h3
+@mixin titleH3Style() {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans", sans-serif;
+  }
+// для основного текста
+@mixin textStyle() {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+// для кнопок
+@mixin btnStyle() {
+  width: 125px;
+  height: 45px;
+  border-radius: 5%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans", sans-serif;
+  text-align: center;
+  line-height: 14px;
+  color: $white;
+  cursor: pointer;
+}
+// cиняя кнопка
+@mixin accentBtn () {
+  background-color: $accent;
+  border: $accent 1px solid;
+  @include btnStyle();
+}
+// белая кнопка
+@mixin whiteBtn () {
+  border: 1px solid $white;
+  @include btnStyle();
+  background-color: inherit;
+}
