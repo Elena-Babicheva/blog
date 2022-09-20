@@ -359,18 +359,25 @@ table {
   color: #292f36;
 }
 .about-company .social-links-list,
-.team .social-links-list {
+.about-company .team-links-list,
+.team .social-links-list,
+.team .team-links-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+.about-company .social-links-list a,
+.about-company .team-links-list a,
+.team .social-links-list a,
+.team .team-links-list a {
+  text-decoration: none;
+  display: block;
+  margin: 1px;
 }
 .about-company .social-links-list a,
 .team .social-links-list a {
-  text-decoration: none;
-  display: block;
   width: 60px;
   height: 60px;
-  margin: 1px;
   margin-bottom: 20px;
 }
 .about-company .social-links-list .link-1,
@@ -413,6 +420,35 @@ table {
 .team .social-links-list .link-5:hover {
   background: #d0d5d9 url("../img/be.png") no-repeat center;
 }
+.about-company .team-links-list a,
+.team .team-links-list a {
+  width: 50px;
+  height: 50px;
+}
+.about-company .team-links-list .link-6,
+.team .team-links-list .link-6 {
+  background: #3a454d url("../img/tweter.png") no-repeat center;
+}
+.about-company .team-links-list .link-6:hover,
+.team .team-links-list .link-6:hover {
+  opacity: 0.8;
+}
+.about-company .team-links-list .link-7,
+.team .team-links-list .link-7 {
+  background: #3a454d url("../img/facebook.png") no-repeat center;
+}
+.about-company .team-links-list .link-7:hover,
+.team .team-links-list .link-7:hover {
+  opacity: 0.8;
+}
+.about-company .team-links-list .link-8,
+.team .team-links-list .link-8 {
+  background: #3a454d url("../img/in.png") no-repeat center;
+}
+.about-company .team-links-list .link-8:hover,
+.team .team-links-list .link-8:hover {
+  opacity: 0.8;
+}
 
 .about-company-value {
   font-size: 18px;
@@ -443,17 +479,21 @@ table {
   margin: auto;
   position: relative;
 }
-.team-card .social-links-list {
+.team-card .team-links-list {
   position: absolute;
-  top: 20%;
-  right: 20%;
-  display: none;
+  top: 25%;
+  right: 25%;
+  opacity: 0;
 }
-.team-card:hover .social-links-list {
-  display: block;
+.team-card:hover .team-links-list {
+  opacity: 1;
 }
 .team-card:hover {
   background-color: #3a454d;
+  color: #fff;
+}
+.team-card .team-img:hover {
+  opacity: 1;
 }
 
 .work {

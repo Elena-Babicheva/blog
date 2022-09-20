@@ -15,16 +15,21 @@
     @include titleH3Style();
     color: $black;
   }
-  .social-links-list {
+  .social-links-list,
+  .team-links-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     a {
       text-decoration: none;
       display: block;
+      margin: 1px;
+    }
+  }
+  .social-links-list {
+    a {
       width: 60px;
       height: 60px;
-      margin: 1px;
       margin-bottom: 20px;
     }
     .link-1 {
@@ -58,6 +63,30 @@
       }
     }
   }
+  .team-links-list {
+    a {
+      width: 50px;
+      height: 50px;
+    }
+    .link-6 {
+      background: $DarkGray url("../img/tweter.png") no-repeat center;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .link-7 {
+      background: $DarkGray url("../img/facebook.png") no-repeat center;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .link-8 {
+      background: $DarkGray url("../img/in.png") no-repeat center;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
 .about-company-value {
@@ -81,17 +110,22 @@
   background-color: $lightCard;
   margin: auto;
   position: relative;
-  .social-links-list {
+  .team-links-list {
     position: absolute;
-    top: 20%;
-    right: 20%;
-    display: none;
+    top: 25%;
+    right: 25%;
+    opacity: 0;
+    // display: none;
   }
-  &:hover .social-links-list {
-    display: block;   
+  &:hover .team-links-list {
+    opacity: 1;
   }
   &:hover {
     background-color: $DarkGray;
+    color: $white;
+  }
+  .team-img:hover {
+    opacity: 1;
   }
 }
 .work {
