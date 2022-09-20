@@ -80,6 +80,19 @@
 .team-card {
   background-color: $lightCard;
   margin: auto;
+  position: relative;
+  .social-links-list {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    display: none;
+  }
+  &:hover .social-links-list {
+    display: block;   
+  }
+  &:hover {
+    background-color: $DarkGray;
+  }
 }
 .work {
   @include textStyle();
@@ -102,7 +115,9 @@
 
 /*only mobile */
 @media (max-width: 767px) {
-  .about-company {
+  .about-company,
+  .team,
+  .work {
     font-size: 15px;
     h2 {
       font-size: 18px;
@@ -137,6 +152,10 @@
         display: block;
         // padding-bottom: 20px;
       }
+    }
+    .flex-box {
+      display: flex;
+      justify-content: center;
     }
   }
 }
