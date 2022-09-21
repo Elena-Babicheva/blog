@@ -203,13 +203,6 @@ table {
 }
 /* lg (desktop) */
 @media (min-width: 1200px) {
-  .header {
-    background-color: inherit;
-    padding: 0;
-  }
-  .header .container {
-    background: #1d2126;
-  }
   .flex-center {
     display: flex;
     align-items: center;

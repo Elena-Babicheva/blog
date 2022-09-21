@@ -115,7 +115,7 @@
 /* laptop */
 @media (min-width: 992px) {
   .header {
-   padding: 1%;
+    padding: 1%;
   }
   .flex-center {
     @include flexCenter();
@@ -127,14 +127,7 @@
 }
 /* lg (desktop) */
 @media (min-width: 1200px) {
-  .header {
-    background-color: inherit;
-    padding: 0;
-    .container {
-      background: $darkHeader;
-    }
-  }
-   .flex-center {
+  .flex-center {
     @include flexCenter();
     flex-wrap: wrap;
   }
