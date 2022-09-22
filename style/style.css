@@ -474,6 +474,17 @@ a {
   background-color: #e1e6ea;
   margin: auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.team-card .team-card-img {
+  width: 100%;
+}
+.team-card .team-card-txt {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 .team-card .team-links-list {
   position: absolute;
@@ -484,7 +495,10 @@ a {
 .team-card:hover .team-links-list {
   opacity: 1;
 }
-.team-card:hover {
+.team-card:hover .team-card-img {
+  background-color: rgba(0, 255, 255, 0.8);
+}
+.team-card:hover .team-card-txt {
   background-color: #3a454d;
   color: #fff;
 }
@@ -605,6 +619,10 @@ a {
   }
   .border-left {
     border-left: 18px solid #e1e6ea;
+  }
+  .team-card .team-links-list {
+    top: 33%;
+    right: 33%;
   }
 }
 /* lg (desktop) */
