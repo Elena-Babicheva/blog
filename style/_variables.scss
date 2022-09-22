@@ -43,6 +43,12 @@ $hoverDarkGray: #4e5a62;
   text-transform: uppercase;
   font-family: "Quattrocento Sans", sans-serif;
   }
+  // для заголовков h4
+@mixin titleH4Style() {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans", sans-serif;
+  }
 
 // для основного текста
 @mixin textStyle() {
