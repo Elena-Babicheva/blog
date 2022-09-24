@@ -327,34 +327,13 @@
     width: 100%;
   }
 }
-/* max-width */
-/* tablet */
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
+
 /* laptop */
 @media (min-width: 992px) {
   .container {
-    max-width: 1025px;
-  }
-}
-/* lg (desktop) */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-// xxl≥1400px
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1440px;
+    max-width: 1170px;
   }
 }
 
-@media (min-width: 1500px) {
-  .container {
-    max-width: 1900px;
-  }
-}
+
+
