@@ -74,10 +74,16 @@ $hoverDarkGray: #4e5a62;
   background-color: $accent;
   border: $accent 1px solid;
   @include btnStyle();
+  &:hover {
+    opacity: 0.8;
+  }
 }
 // белая кнопка
 @mixin whiteBtn () {
   border: 1px solid $white;
   @include btnStyle();
   background-color: inherit;
+  &:hover {
+    opacity: 0.8;
+  }
 }

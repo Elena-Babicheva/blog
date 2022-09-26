@@ -87,7 +87,7 @@ table {
   padding: 8px;
 }
 .navigation-list a:hover, .navigation-list a:focus {
-  padding: 7px;
+  padding: 6px;
   border: 1px solid #a4aead;
   border-radius: 5%;
 }
@@ -243,6 +243,9 @@ table {
   cursor: pointer;
   background-color: inherit;
 }
+.whiteBtn:hover {
+  opacity: 0.8;
+}
 
 .accentBtn {
   background-color: #23b7a4;
@@ -258,6 +261,9 @@ table {
   color: #fff;
   cursor: pointer;
   margin-right: 15px;
+}
+.accentBtn:hover {
+  opacity: 0.8;
 }
 
 /*only mobile */
@@ -361,6 +367,7 @@ h4 {
   padding-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 [class*=white-h] {
@@ -421,7 +428,7 @@ a {
   background: #c8cdd0 url("../img/ball.png") no-repeat center;
 }
 .social-links-list .link-4:hover {
-  background: #d0d5d9 url("../img/ball .png") no-repeat center;
+  background: #d0d5d9 url("../img/ball.png") no-repeat center;
 }
 .social-links-list .link-5 {
   background: #c8cdd0 url("../img/be.png") no-repeat center;
@@ -567,7 +574,6 @@ a {
   }
   h4 {
     font-size: 15px;
-    line-height: 1;
   }
   p {
     margin: 5px 0;
@@ -623,6 +629,12 @@ a {
   }
   .border-left {
     border-left: 18px solid #e1e6ea;
+  }
+  h4 {
+    text-align: start;
+  }
+  p {
+    text-align: start;
   }
 }
 /* lg (desktop) */

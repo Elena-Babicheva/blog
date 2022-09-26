@@ -26,6 +26,7 @@ h4 {
   padding-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 //white title
 [class*="white-h"] {
@@ -82,7 +83,7 @@ a {
   .link-4 {
     background: $socialLink url("../img/ball.png") no-repeat center;
     &:hover {
-      background: $lightGray url("../img/ball .png") no-repeat center;
+      background: $lightGray url("../img/ball.png") no-repeat center;
     }
   }
   .link-5 {
@@ -207,6 +208,7 @@ a {
   text-align: center;
 }
 
+
 // ADAPTABILITY
 /*only mobile */
 @media (max-width: 767px) {
@@ -222,8 +224,7 @@ a {
     line-height: 1;
   }
   h4 {
-    font-size: 15px;
-    line-height: 1;
+    font-size: 15px;       
   }
   p {
     margin: 5px 0;
@@ -282,6 +283,12 @@ a {
   }
   .border-left {
     border-left: 18px solid $lightCard;
+  }
+  h4 {
+    text-align: start;
+  }
+  p {
+    text-align: start;
   }
 }
 
